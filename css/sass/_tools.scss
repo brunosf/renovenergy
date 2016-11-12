@@ -1,0 +1,27 @@
+@mixin font($font, $size: 16px, $w: 400, $transf: initial, $align: center){
+    font-family: $font, sans-serif;
+    font-size: $size;
+    font-weight: $w;
+    text-transform: $transf;
+    text-align: $align;
+}
+
+@mixin centralize($w: 80%){
+    width: $w;
+    max-width: 2000px;
+    margin: 0 auto;
+    
+    // screen 1024px
+    @media screen and (max-width: 64em){
+        width: 100%;
+    }
+}
+
+@mixin flex($justify: space-between, $ai: center, $dir: row, $wrp: wrap){
+    display: flex;
+    justify-content: $justify;
+    align-items: $ai;
+    flex-direction: $dir;
+    flex-wrap: $wrp;
+}
+

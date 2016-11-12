@@ -1,0 +1,80 @@
+.content{
+    @include centralize(100%);
+}
+
+/* header */
+.header{
+    @include flex();
+    height: 185px;
+    
+    .company-logo{
+        width: 245px;
+        height: 85px;
+    }
+    
+    .menu-bar{
+        margin-right: 10px;
+        
+        > .link{
+            @include font(Roboto, 1.2em, 700, uppercase);
+            padding: 10px;
+            position: relative;
+            
+            &:before{
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                height: 5px;
+                width: 0;
+                background-color: $color-brand;
+                transition: width .2s;
+            }
+            
+            &:hover{
+                &:before{
+                    content: '';
+                    width: 100%;
+                }
+                
+            }
+        }
+    }
+}
+
+/* presentation */
+.presentation{
+    @include centralize(80%);
+    // height: 70vh;
+    
+    > .title{
+        @include font($font-primary, 3.125em, 700, uppercase, center);
+        color: $color-font-header;
+    }
+    
+    > .subtitle{
+        @include font($font-primary, 1.562em, 400, initial, center);
+        
+        .detail{
+            color: $color-brand;
+        }
+    }
+    
+    > .nextinfo{
+        @extend .subtitle;
+        display: block;
+        
+        &:after{
+            content: '';
+            display: block;
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSI2MyAwIDEyMiA4MCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+PHBhdGggZD0iTTEyNi42LDYwLjVsMzcuNy0zNy43YzAuOS0wLjksMC45LTIuMywwLTMuMmMtMC45LTAuOS0yLjMtMC45LTMuMiwwTDEyNSw1NS43TDg4LjksMTkuNWMtMC45LTAuOS0yLjMtMC45LTMuMiwwYy0wLjQsMC40LTAuNywxLTAuNywxLjZzMC4yLDEuMiwwLjcsMS42bDM3LjcsMzcuN0MxMjQuMyw2MS4zLDEyNS43LDYxLjMsMTI2LjYsNjAuNXoiLz48L3N2Zz4=);
+            width: 40px;
+            height: 30px;
+            margin: 5px auto;
+        }
+    }
+}
+
+
+
