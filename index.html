@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>RenovEnergy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FF9F1C">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="theme-color" content="#FF9F1C">
+    <script src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
 </head>
 <body>
     <div class="content">
@@ -18,8 +20,8 @@
             
             <nav class="menu-bar">
                 <a href="" class="link">Início</a>
-                <a href="" class="link">Energia Solar</a>
-                <a href="" class="link">Vantagens</a>
+                <a href="#energy-solar" class="link">Energia Solar</a>
+                <a href="#advantages" class="link">Vantagens</a>
                 <a href="" class="link">Serviços</a>
                 <a href="" class="link">Contato</a>
             </nav>
@@ -41,6 +43,72 @@
             </div>
         </section>
         
+        <section id="advantages">
+            <h2 class="title">Vantagens</h2>
+            <div class="content">
+                <div class="advantage-item wallet">
+                    <figure class="icon"></figure>
+                    <p class="caption">Proteção contra aumento na fatura</p>
+                </div>
+                <div class="advantage-item leaf">
+                    <figure class="icon"></figure>
+                    <p class="caption">Energia limpa e renovável sem agredir a natureza</p>
+                </div>
+                <div class="advantage-item diamond">
+                    <figure class="icon"></figure>
+                    <p class="caption">Valorização Imobiliária</p>
+                </div>
+                <div class="advantage-item bolt">
+                    <figure class="icon"></figure>
+                    <p class="caption">Instalação Rápida</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="services">
+            <div class="content">
+                <div class="info-service">
+                    <h2 class="title">Nossos Serviços</h2>
+                    <p class="desc">Com base em uma análise do consumo de energia elétrica do local sugerimos as melhores formas para implantação de um ambiente mais econômico.</p>
+                    <a href="" class="link">Confira</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2 class="title">Faça nos uma visita</h2>
+            <div id="map"></div>
+            <div class="content">
+                <address class="address">
+                    <span class="street">Rua Luiz Rigatto, 70</span><span class="district">Parque Itapuã - Adamantina</span>
+                </address>
+                
+                <h3 class="visit-message">Faça-nos uma visita e conheça nossas instalações, ficaremos felizes em conhece-lo!</h3>
+            </div>
+        </section>
+        
+        <footer id="footer">
+            
+            <div class="main-footer">
+                <div class="content">
+                    <div class="block-contact">
+                        <div class="title">Ligue:</div>
+                        <a href="" class="desc">18. 99737-8290</a>
+                    </div>
+                    <div class="block-contact">
+                        <div class="title">Email:</div>
+                        <a href="" class="desc">contato@renovenergy.com.br</a>
+                    </div>
+                    <div class="block-contact">
+                        <div class="title">Facebook:</div>
+                        <a href="" class="desc">/renovenergy</a>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="credits">Desenvolvido por Bruno e Leonardo</p>
+
+        </footer>
     </div>
 </body>
 </html>

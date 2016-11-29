@@ -1,5 +1,5 @@
-@mixin font($font, $size: 16px, $w: 400, $transf: initial, $align: center){
-    font-family: $font, sans-serif;
+@mixin font($font-one, $size: 16px, $w: 400, $transf: initial, $align: center){
+    font-family: $font-one, sans-serif;
     font-size: $size;
     font-weight: $w;
     text-transform: $transf;
